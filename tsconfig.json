@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "types": ["fvtt-types"],
+    "target": "esnext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "pf2e/*": ["C:/Users/kindp/pf2e/src/module/*"]
+    }
+  },
+  "include": [
+    "./scripts/**/*.js"
+  ]
+}

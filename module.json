@@ -1,0 +1,139 @@
+{
+  "id": "pf2e-lodgings-of-the-roaming-hero",
+  "title": "PF2e - Lodgings of the Roaming Hero",
+  "version": "#{VERSION}#",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "description": "<p>A foundry module containing everything from the Lodgings of the Roaming Hero.</p>",
+  "authors": [
+    {
+      "name": "Michael Hosp / OfflineEnigma",
+      "email": "enigmahomebrew@gmail.com",
+      "discord": "offlineenigma",
+      "flags": {}
+    }
+  ],
+  "url": "#{URL}#",
+  "manifest": "#{MANIFEST}#",
+  "download": "#{DOWNLOAD}#",
+  "packFolders": [
+    {
+      "name": "OfflineEnigma's Homebrew",
+      "sorting": "a",
+      "packs": [],
+      "folders": [
+        {
+          "name": "Lodgings of the Roaming Hero",
+          "sorting": "a",
+          "packs": [
+            "actors",
+            "items",
+            "rules",
+            "lodging",
+            "player-content"
+          ],
+          "folders": [],
+          "color": null
+        }
+      ],
+      "color": null
+    }
+  ],
+  "flags": {
+    "canUpload": true,
+    "pf2e-lodgings-of-the-roaming-hero": {
+      "pf2e-homebrew": {
+        "equipmentTraits": {
+          "room": "Room",
+          "emplacement": "Emplacement",
+          "annex": "Annex"
+        },
+        "featTraits": {
+          "lodging": "Lodging",
+          "siege": "Siege"
+        },
+        "creatureTraits": {
+          "extradimensional": "Extradimensional",
+          "magical": "Magical"
+        }
+      }
+    }
+  },
+  "packs": [
+    {
+      "name": "items",
+      "label": "Items",
+      "path": "packs/items",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "rules",
+      "label": "Rules",
+      "path": "packs/rules",
+      "type": "JournalEntry",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "actors",
+      "label": "Actors",
+      "path": "packs/actors",
+      "type": "Actor",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "lodging",
+      "label": "Lodging",
+      "path": "packs/lodging",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "player-content",
+      "label": "Player Content",
+      "path": "packs/player-content",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "socket": true,
+  "scripts": [
+    "scripts/main.js"
+  ],
+  "documentTypes": {
+    "Actor": {
+      "lodging": {}
+    }
+  }
+}
